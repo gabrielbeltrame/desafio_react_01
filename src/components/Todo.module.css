@@ -1,0 +1,58 @@
+.todoList {
+    display: grid;
+    grid-template-columns: 0.5fr 10fr 0.5fr;
+    gap: 0.5fr;
+    background-color: var(--gray-400);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.todoList p {
+    margin: 1rem 0;
+    line-height: 2.5rem;
+}
+
+
+.todoList input[type="checkbox"] {
+    padding: 0 1.5rem;
+    margin: 1rem;
+    border-radius: 8px;
+    border: 0;
+    background: var(--gray-400);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    
+    transition: background-color 0.1s;
+}
+
+.todoList input[type="checkbox"]:not(:disabled):hover {
+    background: var(--gray-400);
+}
+
+.todoList input:disabled {
+    background: var(--gray-300);
+    cursor: not-allowed;
+}
+
+.todoList button[type="button"] {
+    padding: 0 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border: 0;
+    background: var(--gray-400);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: background-color 0.1s;
+}
+
+.todoList button[type="button"]:not(:disabled):hover {
+    background: var(--gray-400);
+}
+
+.todoList button:disabled {
+    background: var(--gray-300);
+    cursor: not-allowed;
+}

@@ -1,0 +1,157 @@
+/*.sidebar {*/
+/*    background: var(--gray-500);*/
+/*    border-radius: 8px;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.cover {*/
+/*    width: 100%;*/
+/*    height: 72px;*/
+/*    object-fit: cover;*/
+/*}*/
+
+/*.profile {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+
+/*    margin-top: calc(0px - 1.5rem - 6px);*/
+/*}*/
+
+/*.profile strong {*/
+/*    margin-top: 1rem;*/
+/*    color: var(--gray-100);*/
+/*    line-height: 1.6;*/
+/*}*/
+
+/*.profile span {*/
+/*    font-size: 0.875rem;*/
+/*    color: var(--gray-400);*/
+/*    line-height: 1.6;*/
+/*}*/
+
+/*.sidebar footer {*/
+/*    border-top: 1px solid var(--gray-600);*/
+/*    margin-top: 1.5rem;*/
+/*    padding: 1.5rem 2rem 2rem;*/
+/*}*/
+
+/*.sidebar footer a {*/
+/*    width: 100%;*/
+/*    background: transparent;*/
+/*    color: var(--blue-dark);*/
+/*    border: 1px solid var(--blue-dark);*/
+/*    border-radius: 8px;*/
+/*    height: 50px;*/
+/*    padding: 0 1.5rem;*/
+/*    font-weight: bold;*/
+/*    text-decoration: none;*/
+
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+
+/*    gap: 0.5rem;*/
+
+/*    transition: color 0.1s, background-color 0.1s;*/
+/*}*/
+
+/*.sidebar footer a:hover {*/
+/*    background: var(--blue-dark);*/
+/*    color: var(--white);*/
+/*}*/
+
+
+.todoForm {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.todoForm > strong {
+    line-height: 1.6;
+    color: var(--gray-100);
+}
+
+.todoForm textarea {
+    width: 82%;
+    background: var(--gray-400);
+    border: 0;
+    resize: none;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    color: var(--gray-100);
+    line-height: 1;
+    margin-top: 1rem;
+}
+
+.todoForm footer {
+    visibility: hidden;
+    max-height: 0;
+}
+
+.todoForm:focus-within footer {
+    visibility: visible;
+    max-height: none;
+}
+
+.todoForm button[type="submit"] {
+    padding: 0 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    border: 0;
+    background: var(--blue-dark);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: background-color 0.1s;
+}
+
+.todoForm button[type="submit"]:not(:disabled):hover {
+    background: var(--blue);
+}
+
+.todoForm button:disabled {
+    background: var(--gray-300);
+    cursor: not-allowed;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.info div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info p {
+    margin-top: 5px;
+}
+
+.info span {
+    background-color: var(--gray-400);
+    border-radius: 50px;
+    margin-left: 5px;
+    padding: 5px 10px;
+}
+
+.todoList {
+    margin-top: 2rem;
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.purple {
+    color: var(--purple);
+}
